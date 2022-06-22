@@ -455,6 +455,7 @@ class Game {
     ) {
       return;
     }
+fullScreen();
 
     this.objects = buildLevel(this, this.levels[this.currentLevel]);
     this.gameObjects = [this.ball, this.paddle];
@@ -652,8 +653,6 @@ function gameLoop(timestamp) {
 
   requestAnimationFrame(gameLoop);
 }
-	    
-fullScreen();
 
 requestAnimationFrame(gameLoop);
 
